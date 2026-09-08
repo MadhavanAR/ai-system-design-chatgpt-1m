@@ -13,7 +13,7 @@
 
 ---
 
-## 🧭 Architectural Positioning & Scope
+## Architectural Positioning & Scope
 
 To ensure absolute clarity and transparency, this repository explicitly distinguishes between three engineering tiers:
 
@@ -40,7 +40,7 @@ To ensure absolute clarity and transparency, this repository explicitly distingu
 
 ---
 
-## 💡 Why Does This Project Exist?
+## Why Does This Project Exist?
 
 Calling an LLM API is straightforward; building the surrounding distributed platform that remains reliable, observable, cost-effective, and resilient under sustained traffic spikes is the true engineering challenge.
 
@@ -53,7 +53,7 @@ This project addresses the critical platform engineering concerns:
 
 ---
 
-## 🏛️ System Architecture
+## System Architecture
 
 ```text
                                 CLIENT (Next.js / SDK / curl)
@@ -101,7 +101,7 @@ This project addresses the critical platform engineering concerns:
 
 ---
 
-## 📋 What Is Actually Implemented?
+## What Is Actually Implemented?
 
 | Capability | Local Reference Status | Production Scale Target | Code Reference |
 | :--- | :--- | :--- | :--- |
@@ -122,7 +122,7 @@ This project addresses the critical platform engineering concerns:
 
 ---
 
-## ⚡ 3-Minute Quickstart
+## 3-Minute Quickstart
 
 ### Prerequisites
 - **Node.js**: v20+ LTS
@@ -163,7 +163,7 @@ pnpm dev
 
 ---
 
-## 💬 Chat API Example (SSE Streaming)
+## Chat API Example (SSE Streaming)
 
 You can interact directly with the streaming endpoint using `curl`:
 
@@ -199,7 +199,7 @@ data: {"type":"done"}
 
 ---
 
-## 🖥️ Web User Interface
+## Web User Interface
 
 The Next.js 14 frontend (`apps/web`) provides:
 1. **Interactive Chat**: Real-time token rendering with markdown formatting and conversation history.
@@ -209,12 +209,12 @@ The Next.js 14 frontend (`apps/web`) provides:
 
 ---
 
-## 📊 Empirical Benchmarks
+## Empirical Benchmarks
 
 Empirical load testing was executed using **k6** against the live Server-Sent Events (SSE) pipeline with PostgreSQL 16 and Redis 7 backing services under 200 concurrent virtual users (VUs):
 
 ```text
-  █ LOAD TEST RESULTS SUMMARY (k6, 200 Virtual Users, 62s Duration)
+   LOAD TEST RESULTS SUMMARY (k6, 200 Virtual Users, 62s Duration)
 
     Total Requests......: 8,870 requests
     Peak Request Rate...: 146.2 req/s
@@ -229,7 +229,7 @@ Empirical load testing was executed using **k6** against the live Server-Sent Ev
 
 ---
 
-## 📚 Documentation Index
+## Documentation Index
 
 | Guide | Description |
 | :--- | :--- |
@@ -245,7 +245,7 @@ Empirical load testing was executed using **k6** against the live Server-Sent Ev
 
 ---
 
-## 🤝 Contributing & Community
+## Contributing & Community
 
 We welcome contributions from engineers and system designers! Please review:
 - [**CONTRIBUTING.md**](CONTRIBUTING.md): Workflow, code style, testing requirements, and PR checklists.
@@ -255,7 +255,7 @@ We welcome contributions from engineers and system designers! Please review:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [Apache License 2.0](LICENSE).
 Third-party open-source components are acknowledged in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
