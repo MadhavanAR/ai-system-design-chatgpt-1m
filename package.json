@@ -1,0 +1,42 @@
+{
+  "name": "ai-system-design-chatgpt-1m",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-oriented reference architecture and runnable implementation demonstrating how to design and scale a ChatGPT-like AI system for 1M users",
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"./apps/*\" dev",
+    "dev:api": "pnpm --filter @ai-chat/api dev",
+    "dev:web": "pnpm --filter @ai-chat/web dev",
+    "build": "pnpm --filter @ai-chat/api build && pnpm --filter @ai-chat/web build",
+    "test": "pnpm --filter @ai-chat/api test",
+    "typecheck": "pnpm --filter \"./apps/*\" typecheck",
+    "lint": "pnpm --filter \"./apps/*\" lint",
+    "verify": "pnpm typecheck && pnpm test && pnpm build",
+    "benchmark": "k6 run benchmarks/k6-load-test.js",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "keywords": [
+    "system-design",
+    "llm-infrastructure",
+    "chatgpt-architecture",
+    "distributed-systems",
+    "fastify",
+    "nextjs",
+    "redis",
+    "postgresql",
+    "rate-limiting",
+    "model-routing"
+  ],
+  "author": "Engineering Architecture Team",
+  "license": "Apache-2.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "unrs-resolver"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
