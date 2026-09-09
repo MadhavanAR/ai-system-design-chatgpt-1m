@@ -1,6 +1,6 @@
-# Contributing to AI System Design — ChatGPT at 1M Users
+# Contributing to AI System Design - ChatGPT at 1M Users
 
-Thank you for your interest in contributing to this open-source reference implementation and system-design case study. We welcome contributions that improve correctness, documentation, clarity, test coverage, and developer ergonomics.
+Thank you for your interest in contributing to this open-source reference implementation and system-design case study. We welcome contributions that improve correctness, documentation, clarity, test coverage and developer ergonomics.
 
 ---
 
