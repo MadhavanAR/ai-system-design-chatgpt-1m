@@ -1,4 +1,4 @@
-# AI System Design — ChatGPT at 1M Users
+# AI System Design - ChatGPT at 1M Users
 
 [![CI Quality Gate](https://github.com/MadhavanAR/AI-Chatbot/actions/workflows/ci.yml/badge.svg)](https://github.com/MadhavanAR/AI-Chatbot/actions)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue.svg)](https://www.typescriptlang.org/)
